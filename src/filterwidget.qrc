@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file alias="appicon">../resources/Webalys-Kameleon.pics-Music-Equalizer.ico</file>
+    </qresource>
+</RCC>
