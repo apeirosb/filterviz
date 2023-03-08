@@ -24,7 +24,7 @@ FilterViz<T>::FilterViz(T *b, T *a, int length, int fs, char *id, int nfft, bool
     w = new FilterWidget();
 
     // Plot filter
-    visualize(settings.fs, settings.nfft, settings.logx);
+    visualize();
 
     app.exec();
 }
@@ -36,13 +36,8 @@ FilterViz<T>::~FilterViz()
 }
 
 template <class T>
-int FilterViz<T>::visualize(int fs, int nfft, bool logx)
+int FilterViz<T>::visualize()
 {
-    // Parse visualization settings
-    settings.fs = fs;
-    settings.nfft = nfft;
-    settings.logx = logx;
-
     // Compute frequency response of the filter
     computeFreqResponse();
     w->plotFreqResp(freq_response.freq_axis, freq_response.magnitude_db,

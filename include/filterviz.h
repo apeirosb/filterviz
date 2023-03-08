@@ -69,12 +69,9 @@ private:
     /**
      * @brief Run visualization widget (including required computations)
      *
-     * @param fs Sampling frequency (Hz)
-     * @param nfft Number of bins of the frequency response
-     * @param logx Boolean to enable logaritmic frequency axis
      * @return int Return 0 if OK
      */
-    int visualize(int fs, int nfft = 512, bool logx = false);
+    int visualize();
 
     /**
      * @brief Compute frequency response from filter coefficients
