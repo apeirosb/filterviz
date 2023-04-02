@@ -2,7 +2,9 @@
 
 C++ library to display the frequency response of digital fiters in runtime. The primary goal is to plot the filter responses when debugging code. It may be especially useful for adaptive filters, which change over time.
 
-![Filter Visualizer](doc/screenshot.png)
+<p align="center">
+  <img src="doc/screenshot.png" alt="Filter Visualizer" />
+</p>
 
 The tool is designed as a shared library (`.dll`, `.so`, `.dylib`) in order to simplify the integration with external projects.
 
